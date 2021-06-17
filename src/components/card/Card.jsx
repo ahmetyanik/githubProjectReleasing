@@ -41,12 +41,13 @@ function Card() {
       });
   }
 
-  console.log(repo);
+  console.log("searchingWord",searchingWord);
 
   function deleteIt() {
     var nullArray = [];
     setProfil(nullArray);
     setRepo(nullArray);
+    document.getElementById("card").style.display="none";
   }
 
   useEffect(getRepos, []);
